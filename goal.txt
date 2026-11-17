@@ -1,0 +1,40 @@
+Create a maximum-ambition Three.js experience inside a Jackson Pollock drip painting - and inside the act that made it. A Pollock is a frozen recording of motion: every filament is the trace of one whip of the painter's arm. This experience gives the painting its depth back AND its time back. It opens as the flat, instantly recognizable painting; movement reveals the tangle is genuinely three-dimensional - glossy enamel filaments hanging in deep space - and the centerpiece is watching the painting perform itself: lines lashing through the void around the viewer, layer over layer, until the full painting hangs in space again. This must not be a random particle mess, a static spaghetti sculpture, an abstract music-visualizer, or a gray tech demo. It is action painting made explorable.
+
+The goal is the visual impression of a billion feet of flung paint: filaments from rope-thick to hair-fine, droplets frozen mid-splash, arcs and whips crossing tens of meters, all with the material truth of gloss enamel. Achieve this with instanced tube and droplet geometry along simulated whip trajectories, not with noise soup.
+
+If you use Three.js, add an import map before the module script mapping "three" and "three/addons/" to the same pinned version, and import only via those names. Everything procedural; no external assets.
+
+#### FIRST FRAME - THE PAINTING, FLAT AND TRUE
+- Open dead-on to a full-frame composition in the authentic language of Pollock's 1950 masterworks (Autumn Rhythm / One: Number 31): a dense allover web with NO focal center, layered in the correct order and palette - raw warm canvas, then diluted tan and teal pours, then whites, then the assertive black lines whipped over everything, with silver-gray accents.
+- Composition rules matter for recognizability: allover density to every edge, rhythmic looping arcs (not jitter), long confident lashes crossing the whole canvas, pooled thick spots where lines slowed, fine spray where they moved fast. Random scribble is failure; the web must have the athletic rhythm of a painter's arm.
+- Hold as a convincing flat painting for a breath. Then the first mouse movement separates the layers: parallax reveals every filament lives at its own depth in a space many meters deep. The flatness was an illusion of viewpoint. No menus, titles or instructions.
+
+#### THE TANGLE AS A PLACE
+- Once inside, the painting is a navigable environment: filaments as real three-dimensional glossy tubes - thick ropes of black enamel, ribbons of white where paint fell edge-on, hair-fine threads of silver, strings of teardrop droplets frozen mid-flight with motion-stretched shapes, and pooled blobs where pours collided.
+- Scale is the awe: the web extends dozens of meters in every direction, with tunnels and caverns through the density; the viewer flies through gaps, ducks under a black arc thick as an arm, follows one single line through the entire tangle to its final flick.
+- Enamel material truth: high-gloss specular running along every filament like light down wet cable, subtle sag between anchor moments, drips descending from the undersides of thick lines, color marbling where two wet colors crossed and bled.
+- The space between filaments glows warm raw-canvas, hazing with depth so the deep tangle recedes in cream fog - the painting's own colorspace, never a black void.
+
+#### THE PERFORMANCE - TIME IS THE MASTERPIECE
+- The signature spectacle: a large, elegant timeline scrubber runs the painting's creation. Pulled to zero, the space empties to blank canvas glow. Pressed play, the painting performs itself around the viewer in real time over about two minutes.
+- Each line is born as a live lash: a luminous leading point whips through space on an athletic trajectory - accelerating sweeps, tight loops, sudden reversals, the pause-and-drip of a held stance - extruding its glossy filament behind it, shedding droplets on the fast passages that fly outward and freeze into the constellation. Multiple lashes overlap as layers advance: tans first, then whites, then the black assault, then silver grace notes.
+- The choreography must feel ARM-driven: trajectories generated from simulated shoulder-elbow-wrist motion with momentum and rhythm, working the whole canvas the way Pollock walked around it - not random splines. The viewer should feel the dance.
+- Scrubbing is fully bidirectional and buttery: drag backward and lashes retract, droplets fly home, layers unpeel; freeze mid-whip and orbit a single lash caught crossing thirty meters of air with its droplet spray hanging around it - the best photograph in the whole experience.
+- While paused at any point, everything remains subtly alive: specular glints crawling as the camera moves, the freshest filaments still glistening wetter than the old, one slow drip occasionally falling from a heavy line.
+
+#### DYNAMISM EVERYWHERE, EVEN AT REST
+- At full completion (default state after the opening), the tangle is never frozen dead: near-imperceptible tension sway in the longest spans, occasional droplet-fall from thick pools, light breathing slowly across the web like studio daylight moving, dust motes in the canvas-glow air.
+- Flying itself must be dynamic: filaments whipping past the camera in close flight create natural speed drama; brushing very close to a line makes its droplet string tremble.
+
+#### EXPLORATION AND CONTROLS
+- Immediate smooth inertial flight plus orbit fallback; reset returns to the flat painting viewpoint - watching the deep tangle collapse back into a flat famous image as the camera returns is a designed wow, align it perfectly.
+- Presets: the flat painting; inside the central cavern; following the longest black line; the droplet constellation close-up; the wide view showing the whole web hanging in space like a captured explosion.
+- Compact controls only: the creation timeline (the hero), flight speed, and photo mode.
+
+#### PERFORMANCE
+- Filaments as instanced tube segments with LOD (full tubes near, camera-facing ribbon impostors deep); droplets instanced; trajectory data precomputed at load so playback and scrubbing are pure animation, never physics stalls.
+- Quality selector reduces deep-field filament count and droplet density before ever sacrificing playback smoothness, scrub fidelity or gloss material quality.
+- Smooth on a modern laptop, devicePixelRatio clamped to 2. The outcome: the act of action painting, standing inside it.
+
+
+use also image as jpeg and video for tests
